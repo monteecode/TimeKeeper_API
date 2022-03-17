@@ -5,6 +5,9 @@ class UsersController < ApplicationController
             user = User.find_or_create_by(user_params)
             render json: user, include: :user_times
         else
+            render json: {err_message: "Name cannot be blank!" }
+        end
+
     end
 
     def show
