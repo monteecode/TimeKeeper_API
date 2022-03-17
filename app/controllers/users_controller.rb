@@ -7,10 +7,11 @@ class UsersController < ApplicationController
         else
             render json: {err_message: "Name cannot be blank!" }
         end
-
     end
 
     def show
+        user = User.find_by(id: params[:id])
+            render json: user, include: :user_times
     end
 
     private
