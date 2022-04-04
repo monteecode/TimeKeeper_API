@@ -1,0 +1,4 @@
+class UserTimesController < ApplicationController
+
+ 
+end
