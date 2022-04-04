@@ -1,24 +1,17 @@
-# README
+# Time Keeper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app saves on set of 'clock-in' and 'clock-out times per day then add up those times and displays the total per user. This app is built with the following:
 
-Things you may want to cover:
+- React
+- Redux
+- Ruby on Rails as API
+- JavaScript
+- PostgreSQL
 
-* Ruby version
+![Timekeeper calendar](https://github.com/monteecode/timekeeper_react/blob/main/src/images/timekeeper_729x450.jpg?raw=true)
 
-* System dependencies
+## Getting Started
 
-* Configuration
+- Fork and clone the Time Keeper backend app's [Ruby on Rails API](https://github.com/monteecode/TimeKeeper_API). Install all app's associated gems by typing the command line 'bundle install'.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Fork and clone from [this repo](https://github.com/monteecode/timekeeper_react) for the Time Keeper frontend React/Redux app. Run 'npm install'.
