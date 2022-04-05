@@ -37,5 +37,16 @@ class UserTimesController < ApplicationController
             render json: {err_message: "A user is not logged in."}
         end
     end
+
+    def destroy
+
+        user = User.find_by({id: params[:user_id]})
+        if user
+            user.user_times.find_by({date_of_times: params[:date_of_times]}).destroy
+            render json: user, include: :user_times
+        else
+            render json: {err_message: "A user is not logged in."}
+        end
+    end
   
 end
